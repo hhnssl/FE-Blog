@@ -20,7 +20,6 @@ function Header() {
             </Link>
           </h1>
           <ul>
-            {/* <!-- 로그인 --> */}
             <li className="profile-img">
               <Link to="/">
                 <img src={profileImg} alt="My Page" />
@@ -38,10 +37,7 @@ function Header() {
                 <span>Logout</span>
               </button>
             </li>
-            {/* <!-- //로그인 --> */}
 
-            {/* <!-- 로그아웃 --> */}
-            {/* <!-- */}
             {/* <li>
               <Link to="/" className="button gray">
                 <img src="./assets/icon-login.svg" alt="" />
@@ -54,8 +50,6 @@ function Header() {
                 <span>Register</span>
               </Link>
             </li> */}
-            {/* --> */}
-            {/* <!--// 로그아웃 --> */}
           </ul>
         </div>
       </header>

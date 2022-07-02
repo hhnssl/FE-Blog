@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Banner /> */}
-      {/* <Main /> */}
-      {/* <Footer /> */}
+      <Banner />
+      <Main />
+      <Footer />
     </>
   );
 }
