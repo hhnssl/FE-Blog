@@ -1,19 +1,16 @@
-import Footer from './pages/Home/Footer';
-import Header from './pages/Home/Header';
-import Main from './pages/Home/Main';
-import Banner from './pages/Home/Banner';
+import Home from './pages/Home/Home';
+import PostView from './pages/Post/PostView';
 
 import './pages/css/reset.css';
 import './pages/css/global.css';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Banner />
-      <Main />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/post-view" element={<PostView />} />
+    </Routes>
   );
 }
 

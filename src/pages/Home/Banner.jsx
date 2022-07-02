@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/banner.css';
-import '../css/posts.css';
+// import '../css/posts.css';
 
 function Banner() {
   return (

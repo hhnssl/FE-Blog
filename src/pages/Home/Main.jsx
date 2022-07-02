@@ -9,9 +9,9 @@ function MainContainer() {
     <>
       <main>
         {/* <!-- posts --> */}
-        <div class="max-width">
-          <h2 class="a11y-hidden">Post</h2>
-          <ul class="posts">
+        <div className="max-width">
+          <h2 className="a11y-hidden">Post</h2>
+          <ul className="posts">
             <Post />
             <Post />
             <Post />
