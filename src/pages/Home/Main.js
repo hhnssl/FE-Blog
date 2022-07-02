@@ -1,6 +1,6 @@
 import React from 'react';
-import Post from './Main/Post';
-import About from './Main/About';
+import Post from '../Post/Post';
+import About from './About';
 
 function MainContainer() {
   return (
