@@ -1,9 +1,8 @@
 import React from 'react';
-
-import Footer from './Footer';
-import Header from './Header';
-import Main from './Main';
-import Banner from './Banner';
+import Header from '../../components/Header/Header';
+import Banner from '../../components/Banner/Banner';
+import Main from '../../components/Main/Main';
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   return (

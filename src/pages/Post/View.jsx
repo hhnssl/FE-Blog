@@ -4,6 +4,8 @@ import '../css/wrapbox.css';
 
 import profileImg from '../../images/profile.jpg';
 import backgroundImg from '../../images/post-background6.jpg';
+import Author from '../../components/Author/Author';
+import Category from '../../components/Category/Category';
 
 function View() {
   return (
@@ -13,22 +15,11 @@ function View() {
           <section className="wrap-box">
             <div className="inner">
               {/* <!-- author --> */}
-              <dl className="author-wrap">
-                <dt className="a11y-hidden">Author</dt>
-                <dd className="author">
-                  <img src={profileImg} alt="" /> Chilli
-                </dd>
-                <dt className="a11y-hidden">Created</dt>
-                <dd className="created">2022.05.25</dd>
-              </dl>
+              <Author />
               {/* <!-- //author --> */}
 
               {/* <!-- category --> */}
-              <dl className="category">
-                <dt className="a11y-hidden">Category</dt>
-                <dd>Life</dd>
-                <dd>Style</dd>
-              </dl>
+              <Category />
               {/* <!-- //category --> */}
               <div className="title-wrap">
                 <h2>

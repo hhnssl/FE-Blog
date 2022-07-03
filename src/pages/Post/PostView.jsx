@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Home/Header';
-import Banner from '../Home/Banner';
-import Footer from '../Home/Footer';
+import Header from '../../components/Header/Header';
+import Banner from '../../components/Banner/Banner';
+import Footer from '../../components/Footer/Footer';
 import View from './View';
 
 function PostView() {
