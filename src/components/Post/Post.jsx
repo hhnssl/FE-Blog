@@ -6,23 +6,26 @@ import './post.css';
 import Category from '../Category/Category';
 import Author from '../Author/Author';
 
-function Post() {
+function Post({
+  postId,
+  postThumbnail,
+  postTitle,
+  postMainBg,
+  postCategory,
+  postProfileImg
+}) {
   return (
     <>
       <li>
         <Link to="/post-view" className="post">
           <article>
-            <img src={postImg} alt="" />
+            <img src={postThumbnail} alt="" />
             <div className="contents-wrap">
-              {/* <!-- category --> */}
               <Category />
-              {/* <!-- //category --> */}
 
               <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h3>
 
-              {/* <!-- author --> */}
               <Author />
-              {/* <!-- //author --> */}
 
               <p className="post-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.

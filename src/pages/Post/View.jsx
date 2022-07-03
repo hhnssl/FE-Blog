@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/view.css';
-import '../css/wrapbox.css';
+import './view.css';
+import './wrapbox.css';
 
 import profileImg from '../../images/profile.jpg';
 import backgroundImg from '../../images/post-background6.jpg';
@@ -14,13 +14,9 @@ function View() {
         <div className="max-width">
           <section className="wrap-box">
             <div className="inner">
-              {/* <!-- author --> */}
               <Author />
-              {/* <!-- //author --> */}
 
-              {/* <!-- category --> */}
               <Category />
-              {/* <!-- //category --> */}
               <div className="title-wrap">
                 <h2>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
