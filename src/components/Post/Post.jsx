@@ -1,19 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import postImg from '../../images/post-img6.jpg';
 
 import './post.css';
 import Category from '../Category/Category';
 import Author from '../Author/Author';
 
-function Post({
-  postId,
-  postThumbnail,
-  postTitle,
-  postMainBg,
-  postCategory,
-  postProfileImg
-}) {
+function Post({ postThumbnail }) {
+  // console.log(postsData);
+
   return (
     <>
       <li>

@@ -7,14 +7,23 @@ import { useEffect, useState } from 'react';
 function Main() {
   const [postsData, setPostsData] = useState([]);
 
-  const fetchData = async () => {
-    const data = await (await fetch('/data.json')).json();
-    setPostsData(data.posts);
-    console.log(data.posts);
+  const getData = () => {
+    fetch('/data.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        setPostsData(data.posts);
+        // console.log(data.posts[0]);
+      });
   };
-
   useEffect(() => {
-    fetchData();
+    getData();
   }, []);
 
   return (
